@@ -25,8 +25,7 @@ The system follows strict transition rules to maintain account integrity:
 
 
 * **Closed Account**:   
-    Disallows all transactions and viewing of information.  
-    Terminal state: cannot be reactivated or suspended.
+    Disallows all transactions and viewing of information. Terminal state: cannot be reactivated or suspended.
 
 ## Structure
 
