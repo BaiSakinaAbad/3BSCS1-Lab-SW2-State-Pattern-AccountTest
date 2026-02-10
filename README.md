@@ -3,32 +3,32 @@ A laboratory seatwork for State Pattern design
 
 # Bank Account Management (State Pattern)
 
-This repository demonstrates the implementation of the **State Design Pattern** to manage bank account lifecycles. By encapsulating state-specific behaviors into separate classes, the system eliminates complex conditional logic and improves maintainability.
+This repository demonstrates the implementation of the **State Design Pattern** to manage bank account lifecycles.
 
-## Problem Statement
+## Problem
 
 The bank needs to manage different account states (**Active**, **Suspended**, and **Closed**) with specific rules for operations like deposits, withdrawals, and viewing info. Using `if-else` or `switch` statements for these checks is error-prone and scales poorly as new states are added.
 
-## Core Logic & Transitions
+## Logic & Transitions
 
 The system follows strict transition rules to maintain account integrity:
 
 * **Active Account**:
-* Allows deposits and withdrawals.
-* Can transition to **Suspended** or **Closed**.
+    Allows deposits and withdrawals.
+    Can transition to **Suspended** or **Closed**.
 
 
 * **Suspended Account**:
-* Disallows deposits and withdrawals.
-* Allows viewing account information.
-* Can transition to **Active** or **Closed**.
+    Disallows deposits and withdrawals.
+    Allows viewing account information.
+    Can transition to **Active** or **Closed**.
 
 
-* **Closed Account**:
-* Disallows all transactions and viewing of information.
-* Terminal state: cannot be reactivated or suspended.
+* **Closed Account**:   
+    Disallows all transactions and viewing of information.  
+    Terminal state: cannot be reactivated or suspended.
 
-## Technical Structure
+## Structure
 
 ### 1. The Context: `Account`
 
